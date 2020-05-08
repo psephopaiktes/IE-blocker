@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>このサイトは Internet Explorer ではご覧いただけません</title>
+
+  <script>
+    var ua = window.navigator.userAgent.toLowerCase();
+    if ( !ua.match(/msie/) && !ua.match(/trident/) ) {
+      location.href = "/";
+    }
+  </script>
+
+  <style>
+    body {
+      padding: 120px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>このサイトは Internet Explorer ではご覧いただけません</h1>
+  <p>ご利用のブラウザはサポートが切れている、古いソフトウェアです。EdgeやSafari, Chrome等のブラウザをご利用ください。</p>
+  <a href="https://www.google.com/chrome/">Chromeブラウザをダウンロード</a>
+
+</body>
+
+</html>
