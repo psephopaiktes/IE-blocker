@@ -13,7 +13,7 @@
     var backUrl = window.location.search.substring(1);
     if ( ua.match(/msie/) || ua.match(/trident/) ) {
       console.log('IE');
-    } else {
+    } else if(backUrl != "") {
       location.href = backUrl;
     }
   </script>
