@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>このサイトは Internet Explorer ではご覧いただけません</title>
+  <title>このサイトは Internet Explorer でご覧いただけません</title>
 
   <script>
-    var ua = window.navigator.userAgent.toLowerCase();
+    const isIE = document.documentMode;
     var backUrl = window.location.search.substring(1);
-    if ( ua.match(/msie/) || ua.match(/trident/) ) {
+
+    if ( isIE ) {
       console.log('IE');
     } else if(backUrl != "") {
       location.href = backUrl;
@@ -33,6 +34,7 @@
       margin: 96px auto 0;
       width: 160px;
       height: auto;
+      opacity: .5;
     }
     h1 {
       font-size: 20px;
