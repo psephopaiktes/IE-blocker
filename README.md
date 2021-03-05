@@ -10,7 +10,7 @@ HTMLファイルのHeadタグ内に以下のコードを貼り付けます。
 <!-- Block IE -->
 <script>
   if ( document.documentMode ) {
-    location.href = `https://psephopaiktes.github.io/IE-blocker/?https://example.com`;
+    location.href = 'https://psephopaiktes.github.io/IE-blocker/?https://example.com';
   }
 </script>
 ```
